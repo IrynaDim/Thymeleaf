@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Course</title>
+    <link rel="stylesheet" href="/webjars/bootstrap/5.3.2/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/style/index.css"/>
+</head>
+<body>
+<div class="container">
+    <div class="row tablePanel offset-2 mt-4 mb-4 blockPanel">
+        <div class="mt-2 mb-2 position-relative">
+            <a th:href="@{/course/create}" class="newCourse text-dark loadPage">Add new course</a>
+        </div>
+    </div>
+
+    <div th:each="course : ${courses}" class="mb-5">
+        <div class="row offset-2 mt-5 blockShadow">
+            <div class="g-0 bg-light position-relative infoBlock">
+                <div class="p-4 mb-0">
+                    <h5 class="mt-0 fw-bold">Title: <span th:text="${course.getName()}"></span></h5>
+                    <h6><span class="fw-bold">Description:</span> <span th:text="${course.description}"></span></h6>
+                </div>
+                <div class="d-flex justify-content-around p-4 mb-0 text-center blockActionPanel">
+                    <a th:href="@{/course/update/{id}(id=${course.getId()})}" class="loadPage">
+                        <img src="/icons/pencil.svg" alt="Edit">
+                    </a>
+
+                    <button th:value="${course.getId()}" class="deleteCourse btn btn-link p-0" type="button">
+                        <img src="/icons/trash.svg" alt="Delete">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div th:insert="~{footer::scripts}"></div>
+<script src="/js/course.js"></script>
+</body>
+</html>
