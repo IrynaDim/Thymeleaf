@@ -4,22 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1d984a2-3454-4357-90fa-483f78ca0f17" name="Changes" comment="add security">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/foxminded/university_cms/config/security/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/foxminded/university_cms/config/security/UserPrincipalDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/foxminded/university_cms/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/foxminded/university_cms/model/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/foxminded/university_cms/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/foxminded/university_cms/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/foxminded/university_cms/repository/impl/UserRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/authorization/login.html" afterDir="false" />
+    <list default="true" id="b1d984a2-3454-4357-90fa-483f78ca0f17" name="Changes" comment="add description">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/foxminded/university_cms/repository/CourseRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/foxminded/university_cms/repository/impl/CourseRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/foxminded/university_cms/repository/impl/CourseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/foxminded/university_cms/repository/CourseRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/foxminded/university_cms/service/impl/CourseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/foxminded/university_cms/service/impl/CourseServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/style/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/style/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/course/course.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/course/course.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,17 +54,17 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Desktop/Thymeleaf/src/main/resources/public/style&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Desktop/Thymeleaf&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;3982572505b879a8cf62684a803a05b5&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Desktop\Thymeleaf" />
       <recent name="C:\Users\user\Desktop\Thymeleaf\src\main\resources\public\style" />
       <recent name="C:\Users\user\Desktop\Thymeleaf\src\main\resources\templates" />
       <recent name="C:\Users\user\Desktop\Thymeleaf\src\main\resources\templates\course" />
-      <recent name="C:\Users\user\Desktop\Thymeleaf" />
       <recent name="C:\Users\user\Desktop\Thymeleaf\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -119,7 +105,7 @@
       <workItem from="1707604260258" duration="1372000" />
       <workItem from="1707664325550" duration="5806000" />
       <workItem from="1707681712032" duration="2045000" />
-      <workItem from="1707727856207" duration="326000" />
+      <workItem from="1707727856207" duration="692000" />
     </task>
     <task id="LOCAL-00001" summary="add delete and put requests">
       <created>1707605411499</created>
@@ -135,7 +121,35 @@
       <option name="project" value="LOCAL" />
       <updated>1707670210971</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add security">
+      <created>1707728208353</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1707728208353</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add description">
+      <created>1707733782245</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1707733782245</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add description">
+      <created>1707733847833</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1707733847833</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add description">
+      <created>1707734517901</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1707734517901</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,8 +168,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add delete and put requests" />
+    <MESSAGE value="add security" />
     <MESSAGE value="add delete put, post requests" />
-    <option name="LAST_COMMIT_MESSAGE" value="add delete put, post requests" />
+    <MESSAGE value="add description" />
+    <option name="LAST_COMMIT_MESSAGE" value="add description" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Thymeleaf$ThymeleafApplication.ic" NAME="ThymeleafApplication Coverage Results" MODIFIED="1707681441990" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
