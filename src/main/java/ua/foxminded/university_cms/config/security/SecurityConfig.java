@@ -34,13 +34,8 @@ public class SecurityConfig {
                 .formLogin(
                         httpSecurityFormLoginConfigurer ->
                                 httpSecurityFormLoginConfigurer.loginPage("/login")
-                                        .defaultSuccessUrl("/course"))
+                                        .defaultSuccessUrl("/course", true))
                 .build();
-    }
-
-    @Bean
-    public AuthenticationManager authenticationManager(AuthenticationConfiguration authConfig) throws Exception {
-        return authConfig.getAuthenticationManager();
     }
 
     @Bean
