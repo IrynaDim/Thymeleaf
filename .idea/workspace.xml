@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1d984a2-3454-4357-90fa-483f78ca0f17" name="Changes" comment="add delete put, post requests">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+    <list default="true" id="b1d984a2-3454-4357-90fa-483f78ca0f17" name="Changes" comment="add description">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +16,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -26,13 +24,20 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="delete-post-put" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="2cC8ZUKNXsnSlxihrkEKGokN01j" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -58,8 +63,15 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\user\Desktop\Thymeleaf" />
       <recent name="C:\Users\user\Desktop\Thymeleaf\src\main\resources\public\style" />
+      <recent name="C:\Users\user\Desktop\Thymeleaf\src\main\resources\templates" />
       <recent name="C:\Users\user\Desktop\Thymeleaf\src\main\resources\templates\course" />
       <recent name="C:\Users\user\Desktop\Thymeleaf\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Desktop\Thymeleaf\src\main\resources\templates\authorization" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ua.foxminded.university_cms.config.security" />
     </key>
   </component>
   <component name="RunManager">
@@ -79,8 +91,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.ThymeleafApplication" />
-        <item itemvalue="Spring Boot.ThymeleafApplication" />
-        <item itemvalue="Spring Boot.ThymeleafApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -94,6 +104,8 @@
       <updated>1707604258196</updated>
       <workItem from="1707604260258" duration="1372000" />
       <workItem from="1707664325550" duration="5806000" />
+      <workItem from="1707681712032" duration="2045000" />
+      <workItem from="1707727856207" duration="692000" />
     </task>
     <task id="LOCAL-00001" summary="add delete and put requests">
       <created>1707605411499</created>
@@ -109,33 +121,33 @@
       <option name="project" value="LOCAL" />
       <updated>1707670210971</updated>
     </task>
-    <task id="LOCAL-00003" summary="add delete put, post requests">
-      <created>1707729051163</created>
+    <task id="LOCAL-00003" summary="add security">
+      <created>1707728208353</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1707729051163</updated>
+      <updated>1707728208353</updated>
     </task>
-    <task id="LOCAL-00004" summary="add delete put, post requests">
-      <created>1707730781532</created>
+    <task id="LOCAL-00004" summary="add description">
+      <created>1707733782245</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1707730781533</updated>
+      <updated>1707733782245</updated>
     </task>
-    <task id="LOCAL-00005" summary="add delete put, post requests">
-      <created>1707731170927</created>
+    <task id="LOCAL-00005" summary="add description">
+      <created>1707733847833</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1707731170927</updated>
+      <updated>1707733847833</updated>
     </task>
-    <task id="LOCAL-00006" summary="add delete put, post requests">
-      <created>1707735630078</created>
+    <task id="LOCAL-00006" summary="add description">
+      <created>1707734517901</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1707735630078</updated>
+      <updated>1707734517901</updated>
     </task>
     <option name="localTasksCounter" value="7" />
     <servers />
@@ -156,9 +168,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add delete and put requests" />
-    <MESSAGE value="add description" />
+    <MESSAGE value="add security" />
     <MESSAGE value="add delete put, post requests" />
-    <option name="LAST_COMMIT_MESSAGE" value="add delete put, post requests" />
+    <MESSAGE value="add description" />
+    <option name="LAST_COMMIT_MESSAGE" value="add description" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Thymeleaf$ThymeleafApplication.ic" NAME="ThymeleafApplication Coverage Results" MODIFIED="1707681441990" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
