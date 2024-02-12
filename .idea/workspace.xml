@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1d984a2-3454-4357-90fa-483f78ca0f17" name="Changes" comment="add delete put, post requests" />
+    <list default="true" id="b1d984a2-3454-4357-90fa-483f78ca0f17" name="Changes" comment="add security">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/foxminded/university_cms/config/security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/foxminded/university_cms/config/security/UserPrincipalDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/foxminded/university_cms/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/foxminded/university_cms/model/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/foxminded/university_cms/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/foxminded/university_cms/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/foxminded/university_cms/repository/impl/UserRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/authorization/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/foxminded/university_cms/repository/CourseRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/foxminded/university_cms/repository/impl/CourseRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/foxminded/university_cms/repository/impl/CourseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/foxminded/university_cms/repository/CourseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/foxminded/university_cms/service/impl/CourseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/foxminded/university_cms/service/impl/CourseServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/style/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/style/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/course/course.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/course/course.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +30,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -29,32 +46,46 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2cC8ZUKNXsnSlxihrkEKGokN01j" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/user/Desktop/Thymeleaf/src/main/resources/public/style",
-    "nodejs_package_manager_path": "npm",
-    "spring.configuration.checksum": "3982572505b879a8cf62684a803a05b5"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Desktop/Thymeleaf/src/main/resources/public/style&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;3982572505b879a8cf62684a803a05b5&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\user\Desktop\Thymeleaf\src\main\resources\public\style" />
+      <recent name="C:\Users\user\Desktop\Thymeleaf\src\main\resources\templates" />
       <recent name="C:\Users\user\Desktop\Thymeleaf\src\main\resources\templates\course" />
       <recent name="C:\Users\user\Desktop\Thymeleaf" />
       <recent name="C:\Users\user\Desktop\Thymeleaf\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Desktop\Thymeleaf\src\main\resources\templates\authorization" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ua.foxminded.university_cms.config.security" />
     </key>
   </component>
   <component name="RunManager">
@@ -87,6 +118,8 @@
       <updated>1707604258196</updated>
       <workItem from="1707604260258" duration="1372000" />
       <workItem from="1707664325550" duration="5806000" />
+      <workItem from="1707681712032" duration="2045000" />
+      <workItem from="1707727856207" duration="326000" />
     </task>
     <task id="LOCAL-00001" summary="add delete and put requests">
       <created>1707605411499</created>
@@ -124,15 +157,9 @@
     <MESSAGE value="add delete put, post requests" />
     <option name="LAST_COMMIT_MESSAGE" value="add delete put, post requests" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ua/foxminded/university_cms/repository/CourseRepositoryImpl.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Thymeleaf$ThymeleafApplication.ic" NAME="ThymeleafApplication Coverage Results" MODIFIED="1707681441990" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ua.foxminded.university_cms.*</FILTER>
+    </SUITE>
   </component>
 </project>

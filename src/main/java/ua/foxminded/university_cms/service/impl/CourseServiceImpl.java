@@ -4,10 +4,9 @@ import org.springframework.stereotype.Service;
 import ua.foxminded.university_cms.exception.NotFoundException;
 import ua.foxminded.university_cms.exception.ValidationException;
 import ua.foxminded.university_cms.model.Course;
-import ua.foxminded.university_cms.repository.impl.CourseRepository;
+import ua.foxminded.university_cms.repository.CourseRepository;
 import ua.foxminded.university_cms.service.CourseService;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 

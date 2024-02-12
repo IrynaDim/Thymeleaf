@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
 <head>
     <title>Course</title>
     <link rel="stylesheet" href="/webjars/bootstrap/5.3.2/css/bootstrap.min.css"/>
@@ -7,7 +7,7 @@
 </head>
 <body>
 <div class="container">
-    <div class="row tablePanel offset-2 mt-4 mb-4 blockPanel">
+    <div class="row tablePanel offset-2 mt-4 mb-4 blockPanel" sec:authorize="hasAnyAuthority('ROLE_ADMIN')">
         <div class="mt-2 mb-2 position-relative">
             <a th:href="@{/course/create}" class="newCourse text-dark loadPage">Add new course</a>
         </div>
@@ -20,7 +20,8 @@
                     <h5 class="mt-0 fw-bold">Title: <span th:text="${course.getName()}"></span></h5>
                     <h6><span class="fw-bold">Description:</span> <span th:text="${course.description}"></span></h6>
                 </div>
-                <div class="d-flex justify-content-around p-4 mb-0 text-center blockActionPanel">
+                <div sec:authorize="hasAnyAuthority('ROLE_ADMIN')"
+                     class="d-flex justify-content-around p-4 mb-0 text-center blockActionPanel">
                     <a th:href="@{/course/update/{id}(id=${course.getId()})}" class="loadPage">
                         <img src="/icons/pencil.svg" alt="Edit">
                     </a>
@@ -30,6 +31,11 @@
                     </button>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="row offset-2 mt-4 mb-4">
+        <div class="mt-2 mb-2 position-relative">
+            <a th:href="@{/logout}" class="btn btn-primary">Logout</a>
         </div>
     </div>
 </div>

@@ -1,4 +1,4 @@
-package ua.foxminded.university_cms.repository.impl;
+package ua.foxminded.university_cms.repository;
 
 import ua.foxminded.university_cms.model.Course;
 
