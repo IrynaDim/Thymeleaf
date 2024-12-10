@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Schedule</title>
+    <link rel="stylesheet" href="/webjars/bootstrap/5.3.2/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/style/index.css"/>
+    <link rel="stylesheet" href="/style/dropdown.css"/>
+</head>
+<body>
+
+<div class="container">
+    <div class="row offset-2 mt-5 blockShadow">
+        <table class="table mb-0">
+            <thead>
+            <tr class="text-center">
+                <th scope="col">№</th>
+                <th scope="col">Course</th>
+                <th scope="col">Professor</th>
+                <th scope="col">Group</th>
+                <th scope="col">Start at</th>
+                <th scope="col">End at</th>
+                <th scope="col">Classroom</th>
+                <th scope="col">Date</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="schedule : ${schedules}" class="text-center">
+                <th scope="row"><span th:text="${schedule.getId()}"></span></th>
+                <td>
+                    <span th:text="${schedule.getCourseName()}"></span>
+                </td>
+                <td>
+                    <span th:text="${schedule.getProfessorName()}"></span>
+                </td>
+                <td>
+                    <span th:text="${schedule.getGroupName()}"></span>
+                </td>
+                <td>
+                    <span th:text="${#temporals.format(schedule.getStartAt(), 'HH:mm')}"></span>
+                </td>
+                <td>
+                    <span th:text="${#temporals.format(schedule.getEndAt(), 'HH:mm')}"></span>
+                </td>
+                <td>
+                    <span th:text="${schedule.getClassroom()}"></span>
+                </td>
+                <td>
+                    <span th:text="${schedule.getScheduleDate()}"></span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div th:insert="~{footer::scripts}"></div>
+<script src="/js/schedule.js"></script>
+</body>
+</html>
